@@ -1,13 +1,18 @@
 import { Component, DoCheck, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'mostrar-email',
+  template: `
+  <h2> {{title}} </h2>
+  <span *ngIf="emailContacto">Email de contacto: {{emailContacto}} 
+    <button (click)="borrarEmail()">Eliminar email de contacto</button>
+  </span>
+  `
 })
-export class AppComponent implements DoCheck, OnInit {
-  title = 'NGZOO';
+export class MostrarEmailComponent implements DoCheck, OnInit {
+  title = 'ShowMail - Component';
   emailContacto: string;
+
   ngOnInit(){
     this.emailContacto = localStorage.getItem('emailcontacto')
   }

@@ -1,0 +1,42 @@
+
+div.home {
+  width: 50%;
+  background-color: lightgray;
+  height: auto;
+  margin: 20px auto;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+div.home h1 {
+  font-size: 60px;
+  font-weight: unset;
+  margin-bottom: 10px;
+}
+
+div.home p {
+  font-size: 20px;
+}
+
+div.home button {
+  margin-right: 5px;
+  font-size: 15px;
+  padding: 10px;
+  font-style: bold;
+  border-radius: 5px;
+  color: white;
+}
+
+div.home button.animals-button {
+  background-color:#6495ED;
+}
+
+div.home button.keepers-button {
+  background-color: green;
+}
+div.home button.contact-button {
+  background-color: lightsalmon;
+}
+
+
+

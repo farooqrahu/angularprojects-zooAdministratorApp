@@ -1,0 +1,24 @@
+<main>
+  <h3>
+      {{title}}
+  </h3>
+  <table>
+      <tr>
+        <th class="name-field">Name</th>
+        <th class="year-field">Year</th>
+        <th class="actions-field">Actions</th>
+      </tr>
+
+    <tbody>
+      <tr *ngFor="let n of animals">
+          <td>Oso Panda</td>
+          <td>2012</td>
+          <td class="buttons-container">
+            <button class="view-button"><i class="material-icons">remove_red_eye</i>View</button>
+            <button class="edit-button"><i class="material-icons">edit</i>Edit</button>
+            <button class="delete-button"><i class="material-icons">delete</i>Delete</button>
+          </td>
+        </tr>
+    </tbody>
+  </table>  
+</main>

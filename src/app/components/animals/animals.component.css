@@ -1,0 +1,8 @@
+div.animals {
+  width: 50%;
+  background-color: lightgray;
+  height: auto;
+  margin: 20px auto;
+  padding: 10px 30px;
+  border-radius: 5px;
+}

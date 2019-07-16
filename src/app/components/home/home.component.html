@@ -1,0 +1,26 @@
+<div class="home" [@fadeIn]> 
+  <div class="jumbotron"></div>
+    <h1>
+      {{title}}
+    </h1>
+    <p> Enjoy the most exotic animals of our Zoo!</p>
+    <p> 
+      <a [routerLink]="['/animals']">
+        <button class="animals-button">
+          See our animals
+        </button>
+      </a>
+
+      <a [routerLink]="['/keepers']">
+        <button class="keepers-button">
+          Meet our keepers
+        </button>
+      </a>
+
+      <a [routerLink]="['/contact']">
+        <button class="contact-button">
+          Contact with us
+        </button>
+      </a>
+    </p>
+</div>

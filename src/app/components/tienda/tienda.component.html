@@ -1,0 +1,50 @@
+<div [@fadeIn]>
+<button class="botón-activo" [@marcar]="status" (click)="toggleStatus(status)">
+  <span *ngIf="status === 'inactive'">Inactive Button</span>
+  <span *ngIf="status === 'active'">Active Button</span>
+</button>
+
+
+
+<hr>
+Padre:
+<h1>{{titulo}}</h1>
+<ul>
+  <li>Camisa</li>
+  <li>Pantalón</li>
+  <li>Zapatos</li>
+</ul>
+
+<hr/>
+
+<p>
+Nombre de parque:
+<input type="text" [(ngModel)]="nombreDelParque" (keyup)="mostrarNombre()"/>
+</p>
+
+<p>
+Resultado: {{nombreDelParque}}
+</p>
+
+<div>
+  <h4> Datos de miParque desde el hijo(parques)</h4>
+  <ol *ngIf="miParque">
+    <li>{{miParque.nombre}}</li>
+    <li>{{miParque.metros}}</li>
+    <li>{{miParque.vegetacion}}</li>
+    <li>{{miParque.abierto}}</li>
+  </ol>
+</div>
+
+
+<p *ngIf="nombreDelParque">
+
+
+<parques 
+[nombre]="nombreDelParque" 
+[metros]='255' 
+(pasameLosDatos)="verDatosParque($event)"
+
+></parques>
+</p>
+</div>

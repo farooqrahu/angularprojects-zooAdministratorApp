@@ -1,0 +1,27 @@
+<main>
+<div class="sidebar-admin">
+    <h3>
+        {{title}}
+    </h3>
+  <ul>
+    <li>
+      <a [routerLink]="['list']" [routerLinkActive]="['active']">
+        <button id="list-button" (click)='highlightButton($event)'> List</button>
+      </a>
+    </li>
+    <li>
+        <a [routerLink]="['add']" [routerLinkActive]="['active']">
+            <button id="add-button" (click)='highlightButton($event)'> Add</button>
+        </a>
+      </li>
+      <li>
+          <a [routerLink]="['edit']" [routerLinkActive]="['active']">
+              <button id="edit-button" class="not-selected-button"(click)='highlightButton($event)'> Edit</button>
+          </a>
+        </li>
+  </ul>
+</div>
+<div class="router-container">
+  <router-outlet></router-outlet>
+</div>
+</main>

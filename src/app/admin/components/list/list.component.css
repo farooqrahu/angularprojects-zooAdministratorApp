@@ -1,0 +1,46 @@
+th{
+  text-align: left;
+  border-bottom: solid 1px lightgray;
+  padding: 10px 0px;
+}
+th.name-field{
+  width: 200px;
+}
+th.year-field{
+  width: 100px;
+}
+th.actions-field{
+  width: 400px;
+}
+
+td{
+  padding: 10px 0px;
+  color: grey;
+}
+td.buttons-container {
+  display: flex;
+}
+
+button{
+  padding: 8px;
+  color: white;
+  border-radius: 5px;
+  margin-right: 3px;
+  outline: none;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+button.view-button{
+  background-color: #42f563;
+}
+button.edit-button{
+  background-color: #42b9f5;
+}
+button.delete-button{
+  background-color: #f54269;
+}
+button i{
+  font-size: 18px;
+}

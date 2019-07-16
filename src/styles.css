@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+html,body {
+  padding: 10px;
+  margin: 0;
+}
+
+/* Responsive font-size */
+body,i {
+  --font-factor: 1;
+  font-size: calc(var(--font-factor) * 0.8rem);
+}
+
+@media only screen and (min-width: 600px) {
+  body,i {
+    --font-factor: 1.1;
+  }
+  
+}
+
+@media only screen and (min-width: 600px) {
+  body,i {
+    --font-factor: 1.2;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  body,i {
+    --font-factor: 1.3;
+  }
+  
+}
